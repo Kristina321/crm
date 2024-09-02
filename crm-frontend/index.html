@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRM-система</title>
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/media.css">
+  <script defer src="./js/main.js"></script>
+</head>
+
+<body class="page">
+
+  <header id="header" class="header">
+    <div class="container flex header__container">
+      <a href="" id="headerLink" class="logo header__logo" aria-label="Логотип skb">
+        <picture class="header__pic">
+          <source media="(max-width:320px)" srcset="./img/logo320.svg">
+          <source media="(min-width:321px)" srcset="./img/logo.svg">
+          <img src="crm-frontend/img/logo.svg" alt="логотип Skillbus">
+        </picture>
+      </a>
+        <form id="headerForm" class="flex header__form">
+          <input id="search" type="text" class="header__input" placeholder="Введите запрос">
+          <button id="searchBtn" type="button" class="visually-hidden">
+            <span></span>
+            <span></span>
+          </button>
+          <ul id="searchList" class="header__search-list list-reset"></ul>
+        </form>
+    </div>
+  </header>
+
+  <main id="main"></main>
+
+</body>
+
+</html>
